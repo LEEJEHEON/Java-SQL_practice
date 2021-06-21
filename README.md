@@ -1,1 +1,1 @@
-# Java-SQL_pratice
+# Java-SQL_practice
