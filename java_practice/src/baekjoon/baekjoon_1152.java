@@ -6,15 +6,12 @@ public class baekjoon_1152 {
 		Scanner sc = new Scanner(System.in);
 		String word=sc.nextLine();
 		if (word.substring(0,1).equals(" "))
-			word = word.substring(1);
-			System.out.print(word);
-
 			if (word.equals(" ")) {
 				System.out.print(0);
 				System.exit(0);
 			}
+			word = word.substring(1);
 		String[] answer = word.split(" ");
 		System.out.print(answer.length);
-
 	}
 }
