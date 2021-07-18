@@ -18,25 +18,26 @@ public class baekjoon_1316 {
 			System.out.println("---  "+word_a.length);
 			while (j<word_a.length-1) {
 				j++;
-				System.out.println(j + " "+ word_a[j]);
-				System.out.println("all ___ "+ word);
-
 				if (word_a[j].equals(a))
 					continue;
 				else {
 					a = word_a[j];
-					if (word.contains(word_a[j]))
+					if (word.contains(word_a[j])) {
+						j = 999;
 						break;
-					else
+					}
+					else {
 						word.add(word_a[j]);
+					}
 				}
+			}
 			word.clear();
 			if (j+1 == word_a.length)
 				answer ++;
-			}
-			//System.out.print(answer);
 		}
 		System.out.print(answer);
-
 	}
+
+
 }
+
