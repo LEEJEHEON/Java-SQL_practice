@@ -10,6 +10,12 @@ public class baekjoon_1920 {
 		Scanner sc = new Scanner(System.in);
 		int i = sc.nextInt(); 
 		baekjoon = list_n(i);
+		
+		
+		for(int n=0;n<baekjoon.size();n++) {
+			System.out.print(baekjoon.get(n)+ " ");
+		}
+		
 		int j = sc.nextInt();
 		while (j > 0) {
 			int searchNum = Integer.parseInt(sc.next());
@@ -28,14 +34,31 @@ public class baekjoon_1920 {
 			n.add(Integer.parseInt(sc.next()));
 			i--;
 		}
-		sortList(n);
+		n=Sort(n,0,n.size()-1);
 		
 		return n;
 	}
 	//sort(nlogn)
-	public static void sortList(ArrayList i) {
+	public static ArrayList Sort(ArrayList i, int start, int end) {
+		ArrayList<Integer> tmp = (ArrayList<Integer>) i.clone();
+		int min;
+		for(int num1=0;num1<i.size();num1++) {
+			min = 100000001;
+			for(int num2=num1+1;num2<i.size();num2++) {
+				if(num2<num1)
+					
+				
+			}
+			
+		}
 		
-	}
+		//i.set(,)
+		
+		
+		return i;
+		}
+
+
 
 	// ÀÌÁøÅ½»ö
 	public static int search(ArrayList i , int searchNum) {
